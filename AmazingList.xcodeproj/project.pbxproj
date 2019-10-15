@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F963A4B06B6FB956C30DBA5 /* Pods_AmazingList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 402ADEC521A6951372536211 /* Pods_AmazingList.framework */; };
+		59DE50DB37C7CEDB1625A657 /* Pods_AmazingListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CBC564F8581D01630A23AF /* Pods_AmazingListTests.framework */; };
+		D111480F2351821E00B9E537 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111480E2351821E00B9E537 /* AppDelegate.swift */; };
+		D11148182351821F00B9E537 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11148172351821F00B9E537 /* Assets.xcassets */; };
+		D111481B2351821F00B9E537 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11148192351821F00B9E537 /* LaunchScreen.storyboard */; };
+		D11148262351821F00B9E537 /* AmazingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148252351821F00B9E537 /* AmazingListTests.swift */; };
+		D1114834235182A500B9E537 /* MainContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1114833235182A500B9E537 /* MainContainerViewController.swift */; };
+		D1114836235190DA00B9E537 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1114835235190DA00B9E537 /* SceneDelegate.swift */; };
+		D11148382351AB9600B9E537 /* MainContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148372351AB9600B9E537 /* MainContainerView.swift */; };
+		D111483E2351B04900B9E537 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111483A2351B04900B9E537 /* BaseController.swift */; };
+		D11148402351B04900B9E537 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111483C2351B04900B9E537 /* CustomError.swift */; };
+		D11148412351B04900B9E537 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111483D2351B04900B9E537 /* BaseView.swift */; };
+		D11148452351B21C00B9E537 /* UIViewController+Child.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148442351B21C00B9E537 /* UIViewController+Child.swift */; };
+		D11148472351B27D00B9E537 /* UIView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148462351B27D00B9E537 /* UIView+NSLayoutConstraint.swift */; };
+		D11148492351B4CD00B9E537 /* HeaderWeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148482351B4CD00B9E537 /* HeaderWeatherListViewController.swift */; };
+		D111484B2351B4FA00B9E537 /* HorizontalListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111484A2351B4FA00B9E537 /* HorizontalListView.swift */; };
+		D111484D2351B94200B9E537 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111484C2351B94200B9E537 /* CollectionViewDataSource.swift */; };
+		D111484F2351BB5C00B9E537 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D111484E2351BB5C00B9E537 /* Weather.swift */; };
+		D11148512351BC1300B9E537 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148502351BC1300B9E537 /* ImageCollectionViewCell.swift */; };
+		D11148532351BC7B00B9E537 /* NSObject+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148522351BC7B00B9E537 /* NSObject+Name.swift */; };
+		D11148552351C2DB00B9E537 /* HeaderWeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11148542351C2DB00B9E537 /* HeaderWeatherRouter.swift */; };
+		D151DF7A2351DC7500DFE106 /* ContentWeatherListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151DF792351DC7500DFE106 /* ContentWeatherListViewController.swift */; };
+		D151DF7E2351DE9B00DFE106 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151DF7D2351DE9B00DFE106 /* TableViewDataSource.swift */; };
+		D151DF812351DF9700DFE106 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151DF802351DF9700DFE106 /* NewsTableViewCell.swift */; };
+		D151DF8523521B9600DFE106 /* DictionaryCoding in Frameworks */ = {isa = PBXBuildFile; productRef = D151DF8423521B9600DFE106 /* DictionaryCoding */; };
+		D151DF8723521D3700DFE106 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D151DF8623521D3700DFE106 /* GoogleService-Info.plist */; };
+		D151DF89235231D100DFE106 /* MainContainerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D151DF88235231D100DFE106 /* MainContainerFactory.swift */; };
+		D1828A502351D17A000B3CD5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = D1828A4F2351D17A000B3CD5 /* SDWebImage */; };
+		D1828A522351D28B000B3CD5 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D1828A512351D28B000B3CD5 /* SDWebImageMapKit */; };
+		D1828A552351D307000B3CD5 /* WeatherListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1828A542351D307000B3CD5 /* WeatherListService.swift */; };
+		D1828A582351D3E2000B3CD5 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = D1828A572351D3E2000B3CD5 /* PromiseKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D11148222351821F00B9E537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D11148032351821E00B9E537 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D111480A2351821E00B9E537;
+			remoteInfo = AmazingList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C47A1D63B62C0FDB72941B8 /* Pods-AmazingListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingListTests.debug.xcconfig"; path = "Target Support Files/Pods-AmazingListTests/Pods-AmazingListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		22CBC564F8581D01630A23AF /* Pods_AmazingListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		402ADEC521A6951372536211 /* Pods_AmazingList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmazingList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		450A46EDA6F5707990EF8758 /* Pods-AmazingList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingList.debug.xcconfig"; path = "Target Support Files/Pods-AmazingList/Pods-AmazingList.debug.xcconfig"; sourceTree = "<group>"; };
+		86744030955824D487250B77 /* Pods-AmazingList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingList.release.xcconfig"; path = "Target Support Files/Pods-AmazingList/Pods-AmazingList.release.xcconfig"; sourceTree = "<group>"; };
+		BB5354BBBF20EDB8132F2756 /* Pods-AmazingListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmazingListTests.release.xcconfig"; path = "Target Support Files/Pods-AmazingListTests/Pods-AmazingListTests.release.xcconfig"; sourceTree = "<group>"; };
+		D111480B2351821E00B9E537 /* AmazingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D111480E2351821E00B9E537 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D11148172351821F00B9E537 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D111481A2351821F00B9E537 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D111481C2351821F00B9E537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D11148212351821F00B9E537 /* AmazingListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11148252351821F00B9E537 /* AmazingListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazingListTests.swift; sourceTree = "<group>"; };
+		D11148272351821F00B9E537 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1114833235182A500B9E537 /* MainContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContainerViewController.swift; sourceTree = "<group>"; };
+		D1114835235190DA00B9E537 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D11148372351AB9600B9E537 /* MainContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerView.swift; sourceTree = "<group>"; };
+		D111483A2351B04900B9E537 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		D111483C2351B04900B9E537 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
+		D111483D2351B04900B9E537 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		D11148442351B21C00B9E537 /* UIViewController+Child.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Child.swift"; sourceTree = "<group>"; };
+		D11148462351B27D00B9E537 /* UIView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		D11148482351B4CD00B9E537 /* HeaderWeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeatherListViewController.swift; sourceTree = "<group>"; };
+		D111484A2351B4FA00B9E537 /* HorizontalListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalListView.swift; sourceTree = "<group>"; };
+		D111484C2351B94200B9E537 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		D111484E2351BB5C00B9E537 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D11148502351BC1300B9E537 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		D11148522351BC7B00B9E537 /* NSObject+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Name.swift"; sourceTree = "<group>"; };
+		D11148542351C2DB00B9E537 /* HeaderWeatherRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWeatherRouter.swift; sourceTree = "<group>"; };
+		D151DF792351DC7500DFE106 /* ContentWeatherListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentWeatherListViewController.swift; sourceTree = "<group>"; };
+		D151DF7D2351DE9B00DFE106 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		D151DF802351DF9700DFE106 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		D151DF8623521D3700DFE106 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D151DF88235231D100DFE106 /* MainContainerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainerFactory.swift; sourceTree = "<group>"; };
+		D1828A542351D307000B3CD5 /* WeatherListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D11148082351821E00B9E537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1828A522351D28B000B3CD5 /* SDWebImageMapKit in Frameworks */,
+				D1828A582351D3E2000B3CD5 /* PromiseKit in Frameworks */,
+				D1828A502351D17A000B3CD5 /* SDWebImage in Frameworks */,
+				D151DF8523521B9600DFE106 /* DictionaryCoding in Frameworks */,
+				1F963A4B06B6FB956C30DBA5 /* Pods_AmazingList.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D111481E2351821F00B9E537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DE50DB37C7CEDB1625A657 /* Pods_AmazingListTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE72116C17950579CC06D73A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				450A46EDA6F5707990EF8758 /* Pods-AmazingList.debug.xcconfig */,
+				86744030955824D487250B77 /* Pods-AmazingList.release.xcconfig */,
+				1C47A1D63B62C0FDB72941B8 /* Pods-AmazingListTests.debug.xcconfig */,
+				BB5354BBBF20EDB8132F2756 /* Pods-AmazingListTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D11148022351821E00B9E537 = {
+			isa = PBXGroup;
+			children = (
+				D111480D2351821E00B9E537 /* AmazingList */,
+				D11148242351821F00B9E537 /* AmazingListTests */,
+				D111480C2351821E00B9E537 /* Products */,
+				D1828A4E2351D17A000B3CD5 /* Frameworks */,
+				CE72116C17950579CC06D73A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D111480C2351821E00B9E537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D111480B2351821E00B9E537 /* AmazingList.app */,
+				D11148212351821F00B9E537 /* AmazingListTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D111480D2351821E00B9E537 /* AmazingList */ = {
+			isa = PBXGroup;
+			children = (
+				D11148432351B1F600B9E537 /* Extensions */,
+				D11148392351B04900B9E537 /* Base */,
+				D11148322351827B00B9E537 /* WeatherList */,
+				D111480E2351821E00B9E537 /* AppDelegate.swift */,
+				D1114835235190DA00B9E537 /* SceneDelegate.swift */,
+				D11148172351821F00B9E537 /* Assets.xcassets */,
+				D11148192351821F00B9E537 /* LaunchScreen.storyboard */,
+				D151DF8623521D3700DFE106 /* GoogleService-Info.plist */,
+				D111481C2351821F00B9E537 /* Info.plist */,
+			);
+			path = AmazingList;
+			sourceTree = "<group>";
+		};
+		D11148242351821F00B9E537 /* AmazingListTests */ = {
+			isa = PBXGroup;
+			children = (
+				D11148252351821F00B9E537 /* AmazingListTests.swift */,
+				D11148272351821F00B9E537 /* Info.plist */,
+			);
+			path = AmazingListTests;
+			sourceTree = "<group>";
+		};
+		D11148322351827B00B9E537 /* WeatherList */ = {
+			isa = PBXGroup;
+			children = (
+				D151DF8A235236AD00DFE106 /* ContainerView */,
+				D151DF822351E5F500DFE106 /* ContentWeatherList */,
+				D151DF7F2351DF7100DFE106 /* TableView */,
+				D151DF782351DBFE00DFE106 /* CollectionView */,
+				D151DF772351DBE600DFE106 /* Model */,
+				D1828A532351D2A5000B3CD5 /* HeaderWeatherList */,
+			);
+			path = WeatherList;
+			sourceTree = "<group>";
+		};
+		D11148392351B04900B9E537 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D111483A2351B04900B9E537 /* BaseController.swift */,
+				D111483C2351B04900B9E537 /* CustomError.swift */,
+				D111483D2351B04900B9E537 /* BaseView.swift */,
+				D111484C2351B94200B9E537 /* CollectionViewDataSource.swift */,
+				D11148522351BC7B00B9E537 /* NSObject+Name.swift */,
+				D151DF7D2351DE9B00DFE106 /* TableViewDataSource.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D11148432351B1F600B9E537 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D11148442351B21C00B9E537 /* UIViewController+Child.swift */,
+				D11148462351B27D00B9E537 /* UIView+NSLayoutConstraint.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D151DF772351DBE600DFE106 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D111484E2351BB5C00B9E537 /* Weather.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D151DF782351DBFE00DFE106 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				D111484A2351B4FA00B9E537 /* HorizontalListView.swift */,
+				D11148502351BC1300B9E537 /* ImageCollectionViewCell.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		D151DF7F2351DF7100DFE106 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				D151DF802351DF9700DFE106 /* NewsTableViewCell.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		D151DF822351E5F500DFE106 /* ContentWeatherList */ = {
+			isa = PBXGroup;
+			children = (
+				D151DF792351DC7500DFE106 /* ContentWeatherListViewController.swift */,
+			);
+			path = ContentWeatherList;
+			sourceTree = "<group>";
+		};
+		D151DF8A235236AD00DFE106 /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				D1114833235182A500B9E537 /* MainContainerViewController.swift */,
+				D11148372351AB9600B9E537 /* MainContainerView.swift */,
+				D151DF88235231D100DFE106 /* MainContainerFactory.swift */,
+			);
+			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		D1828A4E2351D17A000B3CD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				402ADEC521A6951372536211 /* Pods_AmazingList.framework */,
+				22CBC564F8581D01630A23AF /* Pods_AmazingListTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1828A532351D2A5000B3CD5 /* HeaderWeatherList */ = {
+			isa = PBXGroup;
+			children = (
+				D11148482351B4CD00B9E537 /* HeaderWeatherListViewController.swift */,
+				D11148542351C2DB00B9E537 /* HeaderWeatherRouter.swift */,
+				D1828A542351D307000B3CD5 /* WeatherListService.swift */,
+			);
+			path = HeaderWeatherList;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D111480A2351821E00B9E537 /* AmazingList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D111482A2351821F00B9E537 /* Build configuration list for PBXNativeTarget "AmazingList" */;
+			buildPhases = (
+				0F3D562F6129D80977E649E4 /* [CP] Check Pods Manifest.lock */,
+				D11148072351821E00B9E537 /* Sources */,
+				D11148082351821E00B9E537 /* Frameworks */,
+				D11148092351821E00B9E537 /* Resources */,
+				2553497773C62642FB807607 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazingList;
+			packageProductDependencies = (
+				D1828A4F2351D17A000B3CD5 /* SDWebImage */,
+				D1828A512351D28B000B3CD5 /* SDWebImageMapKit */,
+				D1828A572351D3E2000B3CD5 /* PromiseKit */,
+				D151DF8423521B9600DFE106 /* DictionaryCoding */,
+			);
+			productName = AmazingList;
+			productReference = D111480B2351821E00B9E537 /* AmazingList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D11148202351821F00B9E537 /* AmazingListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D111482D2351821F00B9E537 /* Build configuration list for PBXNativeTarget "AmazingListTests" */;
+			buildPhases = (
+				61DF809650D9A761C8DFB67E /* [CP] Check Pods Manifest.lock */,
+				D111481D2351821F00B9E537 /* Sources */,
+				D111481E2351821F00B9E537 /* Frameworks */,
+				D111481F2351821F00B9E537 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D11148232351821F00B9E537 /* PBXTargetDependency */,
+			);
+			name = AmazingListTests;
+			productName = AmazingListTests;
+			productReference = D11148212351821F00B9E537 /* AmazingListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D11148032351821E00B9E537 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Dinh Thanh An";
+				TargetAttributes = {
+					D111480A2351821E00B9E537 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					D11148202351821F00B9E537 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = D111480A2351821E00B9E537;
+					};
+				};
+			};
+			buildConfigurationList = D11148062351821E00B9E537 /* Build configuration list for PBXProject "AmazingList" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D11148022351821E00B9E537;
+			packageReferences = (
+				D1828A4D2351CF8C000B3CD5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				D1828A562351D3E2000B3CD5 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				D151DF8323521B9600DFE106 /* XCRemoteSwiftPackageReference "DictionaryCoding" */,
+			);
+			productRefGroup = D111480C2351821E00B9E537 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D111480A2351821E00B9E537 /* AmazingList */,
+				D11148202351821F00B9E537 /* AmazingListTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D11148092351821E00B9E537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D111481B2351821F00B9E537 /* LaunchScreen.storyboard in Resources */,
+				D11148182351821F00B9E537 /* Assets.xcassets in Resources */,
+				D151DF8723521D3700DFE106 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D111481F2351821F00B9E537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F3D562F6129D80977E649E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazingList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2553497773C62642FB807607 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingList/Pods-AmazingList-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AmazingList/Pods-AmazingList-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AmazingList/Pods-AmazingList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61DF809650D9A761C8DFB67E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AmazingListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D11148072351821E00B9E537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11148402351B04900B9E537 /* CustomError.swift in Sources */,
+				D1114834235182A500B9E537 /* MainContainerViewController.swift in Sources */,
+				D151DF812351DF9700DFE106 /* NewsTableViewCell.swift in Sources */,
+				D11148492351B4CD00B9E537 /* HeaderWeatherListViewController.swift in Sources */,
+				D11148532351BC7B00B9E537 /* NSObject+Name.swift in Sources */,
+				D11148382351AB9600B9E537 /* MainContainerView.swift in Sources */,
+				D11148472351B27D00B9E537 /* UIView+NSLayoutConstraint.swift in Sources */,
+				D11148452351B21C00B9E537 /* UIViewController+Child.swift in Sources */,
+				D151DF7A2351DC7500DFE106 /* ContentWeatherListViewController.swift in Sources */,
+				D1828A552351D307000B3CD5 /* WeatherListService.swift in Sources */,
+				D111483E2351B04900B9E537 /* BaseController.swift in Sources */,
+				D111484D2351B94200B9E537 /* CollectionViewDataSource.swift in Sources */,
+				D111484F2351BB5C00B9E537 /* Weather.swift in Sources */,
+				D111480F2351821E00B9E537 /* AppDelegate.swift in Sources */,
+				D11148512351BC1300B9E537 /* ImageCollectionViewCell.swift in Sources */,
+				D151DF89235231D100DFE106 /* MainContainerFactory.swift in Sources */,
+				D111484B2351B4FA00B9E537 /* HorizontalListView.swift in Sources */,
+				D1114836235190DA00B9E537 /* SceneDelegate.swift in Sources */,
+				D11148552351C2DB00B9E537 /* HeaderWeatherRouter.swift in Sources */,
+				D151DF7E2351DE9B00DFE106 /* TableViewDataSource.swift in Sources */,
+				D11148412351B04900B9E537 /* BaseView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D111481D2351821F00B9E537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11148262351821F00B9E537 /* AmazingListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D11148232351821F00B9E537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D111480A2351821E00B9E537 /* AmazingList */;
+			targetProxy = D11148222351821F00B9E537 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D11148192351821F00B9E537 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D111481A2351821F00B9E537 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D11148282351821F00B9E537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D11148292351821F00B9E537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D111482B2351821F00B9E537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 450A46EDA6F5707990EF8758 /* Pods-AmazingList.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmazingList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = an.AmazingList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D111482C2351821F00B9E537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86744030955824D487250B77 /* Pods-AmazingList.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmazingList/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = an.AmazingList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D111482E2351821F00B9E537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C47A1D63B62C0FDB72941B8 /* Pods-AmazingListTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmazingListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = an.AmazingListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazingList.app/AmazingList";
+			};
+			name = Debug;
+		};
+		D111482F2351821F00B9E537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5354BBBF20EDB8132F2756 /* Pods-AmazingListTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AmazingListTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = an.AmazingListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazingList.app/AmazingList";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D11148062351821E00B9E537 /* Build configuration list for PBXProject "AmazingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D11148282351821F00B9E537 /* Debug */,
+				D11148292351821F00B9E537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D111482A2351821F00B9E537 /* Build configuration list for PBXNativeTarget "AmazingList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D111482B2351821F00B9E537 /* Debug */,
+				D111482C2351821F00B9E537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D111482D2351821F00B9E537 /* Build configuration list for PBXNativeTarget "AmazingListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D111482E2351821F00B9E537 /* Debug */,
+				D111482F2351821F00B9E537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D151DF8323521B9600DFE106 /* XCRemoteSwiftPackageReference "DictionaryCoding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elegantchaos/DictionaryCoding.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+		D1828A4D2351CF8C000B3CD5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.3;
+			};
+		};
+		D1828A562351D3E2000B3CD5 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D151DF8423521B9600DFE106 /* DictionaryCoding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D151DF8323521B9600DFE106 /* XCRemoteSwiftPackageReference "DictionaryCoding" */;
+			productName = DictionaryCoding;
+		};
+		D1828A4F2351D17A000B3CD5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1828A4D2351CF8C000B3CD5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		D1828A512351D28B000B3CD5 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1828A4D2351CF8C000B3CD5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
+		D1828A572351D3E2000B3CD5 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1828A562351D3E2000B3CD5 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D11148032351821E00B9E537 /* Project object */;
+}
